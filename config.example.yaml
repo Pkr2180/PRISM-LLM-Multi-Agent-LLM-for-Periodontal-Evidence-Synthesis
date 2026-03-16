@@ -1,0 +1,56 @@
+# ══════════════════════════════════════════
+# PRISM-LLM Configuration
+# Copy to config.yaml and add your API keys
+# ══════════════════════════════════════════
+
+llm:
+  backbone: "claude-sonnet-4-20250514"
+  max_tokens: 1000
+  temperature: 0.0
+
+retrieval:
+  databases: ["pubmed", "scopus", "wos", "embase", "central"]
+  hybrid_alpha: 0.6
+  dedup_threshold: 0.92
+  max_results_per_db: 1000
+  mesh_expansion: true
+  api_keys:
+    pubmed: "${PUBMED_API_KEY}"
+    scopus: "${SCOPUS_API_KEY}"
+    wos: "${WOS_API_KEY}"
+
+screening:
+  threshold_include: 0.7
+  threshold_exclude: 0.3
+  uncertain_review: true
+  max_retries: 2
+
+extraction:
+  schema: "pico_perio"
+  json_mode: true
+  numerical_grounding: true
+  re_extraction_on_flag: true
+  max_retries: 2
+  plausibility_bounds:
+    cal_gain_mm: [0.0, 8.0]
+    pd_reduction_mm: [0.0, 9.0]
+    bone_fill_pct: [0.0, 100.0]
+
+quality_assessment:
+  rct_tool: "rob2"
+  non_rct_tool: "robins_i"
+  review_tool: "amstar2"
+  grade_assessment: true
+  cot_reasoning: true
+
+synthesis:
+  quality_weighting: true
+  gap_detection: true
+  hallucination_guard:
+    nli_model: "deberta-v3-large"
+    nli_threshold: 0.7
+    plausibility_check: true
+
+output:
+  format: ["json", "csv"]
+  prisma_flow: true

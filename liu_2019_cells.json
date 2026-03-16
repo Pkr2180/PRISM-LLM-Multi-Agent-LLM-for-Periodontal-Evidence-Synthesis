@@ -1,0 +1,19 @@
+{
+  "study_id": "10.3390/cells8060537",
+  "title": "Periodontal Bone-Ligament-Cementum Regeneration via Scaffolds and Stem Cells",
+  "authors": ["Liu J", "Ruan J", "Weir MD", "Ren K", "Schneider A", "Wang P", "Oates TW", "Chang X", "Xu HHK"],
+  "year": 2019,
+  "journal": "Cells",
+  "doi": "10.3390/cells8060537",
+  "study_design": "review",
+  "stem_cells": ["hBMSCs", "hDPSCs", "hUCMSCs", "hESC-MSCs", "hiPSC-MSCs", "PDLSCs", "GMSCs", "ADSCs", "DFSCs"],
+  "scaffolds": ["CPC", "alginate", "BCP", "PCL", "PGA", "PLGA", "chitosan", "collagen", "nHA", "bioactive glass", "beta-TCP", "SIS"],
+  "growth_factors": ["BMP-2", "BMP-7", "PDGF-BB", "SDF-1", "FGF-2", "CTGF", "GDF-5", "CEMP1", "amelogenin", "PRP"],
+  "key_findings": [
+    "hBMSC-CPC: 42.1% new bone at 12wk (3x control)",
+    "Tri-culture: 45% bone, 50% vessels (4.5x, 2.5x)",
+    "Ad-PDGF-B: 4x bone bridge, 6x cementum",
+    "LBL complex: complete reconstruction at 20 days",
+    "Tri-layered nanocomposite: full defect closure at 3 months"
+  ]
+}

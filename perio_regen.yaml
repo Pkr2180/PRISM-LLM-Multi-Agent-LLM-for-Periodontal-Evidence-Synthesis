@@ -1,0 +1,35 @@
+# Periodontal Regeneration Review Configuration
+
+search:
+  concept_blocks:
+    disease_defect:
+      - "periodontitis"
+      - "periodontal defect"
+      - "intrabony defect"
+      - "furcation defect"
+    regeneration:
+      - "periodontal regeneration"
+      - "guided tissue regeneration"
+      - "bone graft"
+      - "enamel matrix derivative"
+      - "platelet rich fibrin"
+      - "growth factor"
+      - "scaffold"
+      - "stem cell"
+    outcomes:
+      - "clinical attachment level"
+      - "probing depth"
+      - "bone fill"
+  date_range: ["2005-01-01", "2025-12-31"]
+
+inclusion:
+  - "Human participants with periodontal defects"
+  - "Any regenerative modality"
+  - "Reports CAL/PD/bone fill"
+  - "RCT or controlled design"
+
+exclusion:
+  - "Peri-implant only"
+  - "Animal-only or in-vitro"
+  - "No extractable outcome data"
+  - "Case reports n<10"
